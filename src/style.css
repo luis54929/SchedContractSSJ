@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  background: linear-gradient(to bottom right,  #008efa, #008efa,#ff0000, #c7c7c7,#ff0000, #1a9900,#1a9900);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}

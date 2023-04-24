@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secretaría Seguridad y justicia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+
+  </head>
+  <body>
+    <div class="container">
+      <form class="Formulario" id="idFormulario">
+        <div class="bg-light p-5 rounded-lg m-3">
+          <h1 class="display-4">Modulo de agregar contrato</h1>
+          <p class="lead">Ingresa el numero de contrato, junto con su respectivo link del secop.</p>
+          <hr class="my-4">
+          <div class="form-group">
+            <input for="numContrato" type="text" class="form-control" id="input-numContratc" placeholder="4161.010.32.1..." required>
+            <br>
+            <input for="linkSecop" type="text" class="form-control" id="input-link" placeholder="https://community.secop.gov.co/..." required>
+            <br>
+          <div class="text-center">
+            <button type="submit"class="btn btn-success btn-lg mx-3">Agregar Contrato</button>
+            <button type="button" onclick="gotoInit()" class="btn btn-primary btn-lg mx-3">Volver</button>
+          </div>
+          </div>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="addContratct.js"></script>
+</html>

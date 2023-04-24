@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secretaría Seguridad y justicia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <div class="container">
+    <form class="Formulario" id="idBuscador">
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Bienvenido!</h1>
+        <p class="lead">Ingresa el link del SECOP II o en su defecto el número de contrato completo.</p>
+        <div class="form-group">
+          <input type="text" class="form-control" id="input-link" placeholder="https://community.secop.gov.co/..."
+            required>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-lg mx-3">Buscar</button>
+          <button type="button" class="btn btn-success btn-lg mx-3">Generar Reporte</button>
+          <button type="button" onclick="irAAddContract()" class="btn btn-info btn-lg mx-3">Agregar Contrato</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contratos Proximos a vencer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aún no hay contratos registrados.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
